@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="header">
+        <h1>Education Website</h1>
+        <div>
+            <div class="header-value">
+                <p><a href="index.html">Home</a></p>
+                <p><a href="login.html">Login</a></p>
+                <p><a href="doubt.html">Doubt</a></p>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()"> Register </button>
+            </div>
+            
+        <div class="social-icons">
+            <img src="fb.png" alt="facebook-image">
+            <img src="gp.png" alt="google-image">
+            <img src="tw.png" alt="twitter-image">
+        </div>
+        <form class="input-group" id="login">
+            <input type="text" class="input-feild" placeholder="Userid" required>
+            <input type="password" class="input-feild" placeholder="Enter passward" required>
+            <input type="checkbox" class="check-box"><span>Remember passward</span>
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+        <form class="input-group" id="register">
+            <input type="text" class="input-feild" placeholder="Userid" required>
+            <input type="email" class="input-feild" placeholder="Email id" required>
+            <input type="password" class="input-feild" placeholder="Enter passward" required>
+            <input type="checkbox" class="check-box"><span>I agree to terms & conditons</span>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+        </div>
+    </div>
+    <script>
+        var x= document.getElementById("login");
+        var y= document.getElementById("register");
+        var z= document.getElementById("btn");
+        function register()
+        {
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+        function login()
+        {
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0";
+        }
+    </script>
+</body>
+</html>
